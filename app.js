@@ -10,8 +10,8 @@ app.use('/img', express.static(__dirname + 'public/img'))
 app.use('/js', express.static(__dirname + 'public/js'))
 
 //Templating Engine
-app.set('views', './src/vies')
-app.set('views engine', 'ejs')
+app.set('views', './src/views')
+app.set('view engine', 'ejs')
 
 //Routes
 const newsRouter = require('./src/routes/news')
