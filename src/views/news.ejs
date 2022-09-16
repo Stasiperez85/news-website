@@ -10,7 +10,27 @@
 </head>
 
 <body>
-    <h1>Node.js News</h1>
+    <header class="header">
+        <div class="header__logo">Node.Js News</div>
+        <div class="header__search">Search</div>
+    </header>
+
+    <div class="wrapper">
+        <div class="news">
+            <% articles.forEach(function(article, index) { %>
+                <a href="/articles/" ></a> class="news__card">
+                    <img src=",%- article.thumbnail_url %>" alt="<%- article.title.rendered%>">
+                    <h2>
+                        <%- article.title.rendered%>
+                    </h2>
+                    <p>
+                        <%- article.excerpt.rendered%>
+                    </p>
+                </a>
+                <% }) %>
+        </div>
+    </div>
+
 </body>
 
 </html>

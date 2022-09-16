@@ -1,1 +1,47 @@
-/*# sourceMappingURL=styles.css.map */
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f6f6f6;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #10555a;
+  margin-bottom: 10px;
+}
+.header__search input[type=text] {
+  padding: 6px;
+  border: none;
+}
+.header__search input[tyep=submit] {
+  float: right;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  padding: 0 1 rem;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-gap: 2rem .news __card;
+  grid-gap-text-decoration: none;
+  grid-gap-color: rgb(8, 8, 8);
+  grid-gap-background-color: #fff;
+  grid-gap-padding: 20px;
+}/*# sourceMappingURL=styles.css.map */
